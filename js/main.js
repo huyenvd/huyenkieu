@@ -97,7 +97,7 @@ $(document).ready(function() {
 		
 	if( $('#countdown').length ) {
 		// Set the date we're counting down to
-		var countDownDate = Date.parse('25 Jun 2018 15:30:00');
+		var countDownDate = Date.parse('26 Jun 2023 08:00:00');
 		
 		// Update the count down every 1 second
 		var x = setInterval(function() {
@@ -117,10 +117,10 @@ $(document).ready(function() {
 		  // Display the result in the element with class="countdown"
 		  document.getElementById('countdown').innerHTML = 
 		  "<ul>" + 
-			  "<li>" + "<h2>" + days + "</h2>" + "<h4>days</h4>" + "</li>" +
-			  "<li>" + "<h2>" + hours + "</h2>" + "<h4>hours</h4>" + "</li>"+
-			  "<li>" + "<h2>" + minutes + "</h2>" + "<h4>min</h4>" + "</li>"+
-			  "<li>" + "<h2>" + seconds + "</h2>" + "<h4>sec</h4>"+"</li>"+			  
+			  "<li>" + "<h2>" + days + "</h2>" + "<h4>ngày</h4>" + "</li>" +
+			  "<li>" + "<h2>" + hours + "</h2>" + "<h4>giờ</h4>" + "</li>"+
+			  "<li>" + "<h2>" + minutes + "</h2>" + "<h4>phút</h4>" + "</li>"+
+			  "<li>" + "<h2>" + seconds + "</h2>" + "<h4>giây</h4>"+"</li>"+			  
 		  "</ul>";
 		  
 		  // If the count down is finished, write some text 
