@@ -11,9 +11,14 @@
 	});
 
 $(document).ready(function() {
-
-	"use strict";
-
+	const navLinks = document.querySelectorAll('.nav-item');
+	const menuToggle = document.getElementById('navbarSupportedContent');
+	const bsCollapse = new bootstrap.Collapse(menuToggle);
+	navLinks.forEach((l) => {
+		l.addEventListener('click', () => { bsCollapse.toggle() })
+	});
+	bsCollapse.toggle();
+	bsCollapse.toggle();
 	/* Video Player
 	-----------------------------------------------------------------------------------*/
 	if ($("#video-wrap").length) {
@@ -117,10 +122,10 @@ $(document).ready(function() {
 		  // Display the result in the element with class="countdown"
 		  document.getElementById('countdown').innerHTML = 
 		  "<ul>" + 
-			  "<li>" + "<h2>" + days + "</h2>" + "<h4>ngày</h4>" + "</li>" +
-			  "<li>" + "<h2>" + hours + "</h2>" + "<h4>giờ</h4>" + "</li>"+
-			  "<li>" + "<h2>" + minutes + "</h2>" + "<h4>phút</h4>" + "</li>"+
-			  "<li>" + "<h2>" + seconds + "</h2>" + "<h4>giây</h4>"+"</li>"+			  
+			  "<li class=\"heart\">" + "<h2>" + days + "</h2>" + "<h4>ngày</h4>" + "</li>" +
+			  "<li class=\"heart\">" + "<h2>" + hours + "</h2>" + "<h4>giờ</h4>" + "</li>"+
+			  "<li class=\"heart\">" + "<h2>" + minutes + "</h2>" + "<h4>phút</h4>" + "</li>"+
+			  "<li class=\"heart\">" + "<h2>" + seconds + "</h2>" + "<h4>giây</h4>"+"</li>"+			  
 		  "</ul>";
 		  
 		  // If the count down is finished, write some text 

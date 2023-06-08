@@ -34,7 +34,36 @@ Contact: https://themeforest.net/user/regediter
 23 - Scroll Up
 24 - Responsive
 ==================================================== */
+.heart {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/heart.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: inline-block;
+  position: positive;
+  height: 136px;
+  width: 106px;
+  margin-right: 10px;
+  margin-top: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.circle { 
+   width: 96px;
+   height: 96px;
+   background: pink; 
+   -moz-border-radius: 48px; 
+   -webkit-border-radius: 48px; 
+   border-radius: 48px;
+   margin-right: 1rem;
+   margin-top: 1rem;
+}
 
+.button-click { 
+   background: pink; 
+   padding: 10px;
+   padding-top: 3px;
+   padding-bottom: 3px;
+}
 
 /* 1 Base CSS
 ==================================================== */
@@ -811,6 +840,25 @@ footer h2 {
 	-o-transition: 450ms all ease-in-out;
 	transition: 450ms all ease-in-out;
 }
+
+.thumbnail-overlay-qrcode{
+	overflow: hidden;
+}
+
+.thumbnail-overlay-qrcode:after{
+	position: absolute;
+	width: 30%;
+	content: " ";
+	height: 30%;
+	opacity: 0;
+	top: 0;
+	background: rgba(0,0,0,0.7);
+	left: 0;
+	-webkit-transition: 450ms all ease-in-out;
+	-o-transition: 450ms all ease-in-out;
+	transition: 450ms all ease-in-out;
+}
+
 #portfolio .item:hover .thumbnail-overlay:after{
 	opacity: 1;
 }
