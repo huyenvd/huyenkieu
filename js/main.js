@@ -4,21 +4,23 @@
 
 	$(window).on('load', function() {
 
-		"use strict";
+		//"use strict";
 		// Load the page and wait 1s.
-	    $('#loader').delay( 1000 ).fadeOut('slow');	
+	    //$('#loader').delay( 1000 ).fadeOut('slow');	
 
 	});
 
 $(document).ready(function() {
+	
 	const navLinks = document.querySelectorAll('.nav-item');
 	const menuToggle = document.getElementById('navbarSupportedContent');
 	const bsCollapse = new bootstrap.Collapse(menuToggle);
 	navLinks.forEach((l) => {
 		l.addEventListener('click', () => { bsCollapse.toggle() })
 	});
-	bsCollapse.toggle();
-	bsCollapse.toggle();
+	setTimeout(function() {
+	  bsCollapse.toggle();
+	}, 600);
 	/* Video Player
 	-----------------------------------------------------------------------------------*/
 	if ($("#video-wrap").length) {
@@ -51,10 +53,7 @@ $(document).ready(function() {
     		transition: 'fade2',
     		transitionDuration: 4000,
     		slides: [
-    			{ src: "./img/portfolio_1.jpg" },
-    			{ src: "./img/portfolio_2.jpg" },
-    			{ src: "./img/portfolio_3.jpg" },
-    			{ src: "./img/portfolio_4.jpg" }
+    			{ src: "./img/portfolio_1.jpg" }
     		]
     	});
     }
