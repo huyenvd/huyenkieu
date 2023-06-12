@@ -261,13 +261,13 @@ body{
 	line-height: 26px;
 }
 section, .section{
-	padding: 8rem 0;
+	padding: 6rem 0;
 	position: relative;
 	background: #fff;
 }
 section #portfolio{
 	padding-top: 6.125rem;
-    padding-bottom: 8rem;
+    padding-bottom: 4rem;
 }
 a, .custom-color{
 	color: #de037f;
@@ -1462,7 +1462,7 @@ select.form-control:not([size]):not([multiple]) {
 /* 24 Responsive
 ==================================================== */
 
-@media screen and (max-width: 576px){
+@media screen and (max-width: 580px){
 
 	#primary-navbar-box.affix{
 		min-width: 100%;
@@ -1474,7 +1474,7 @@ select.form-control:not([size]):not([multiple]) {
 	}
 	section,
 	.section{
-		padding: 6rem 0;
+		padding: 5rem 0;
 	}
 	.margin-sm-b-2{
 		margin-bottom: 2rem;
