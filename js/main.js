@@ -111,6 +111,7 @@ $(document).ready(function() {
 
 		  // Find the distance between now an the count down date
 		  var distance = countDownDate - now;
+		  distance = Math.abs(distance);
 
 		  // Time calculations for days, hours, minutes and seconds
 		  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -127,11 +128,11 @@ $(document).ready(function() {
 			  "<li class=\"heart\">" + "<h2>" + seconds + "</h2>" + "<h4>giây</h4>"+"</li>"+			  
 		  "</ul>";
 		  
-		  // If the count down is finished, write some text 
-		  if (distance < 0) {
-		  	clearInterval(x);
-		  	document.getElementById('countdown').innerHTML = "Đã diễn ra";
-		  }
+		//   // If the count down is finished, write some text 
+		//   if (distance < 0) {
+		//   	clearInterval(x);
+		//   	document.getElementById('countdown').innerHTML = "Đã diễn ra";
+		//   }
 		}, 1000);
 	}
 
