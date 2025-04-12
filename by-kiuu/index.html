@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -93,7 +92,7 @@
             border: 1px solid #fff;
             border-radius: 30px;
             overflow: hidden;
-            min-height: 218px;
+            min-height: 200px;
             transition: transform 0.3s;
             cursor: pointer;
         }
@@ -108,7 +107,6 @@
         }
 
         .product-info {
-            width: 50%;
             padding: 15px;
             display: flex;
             flex-direction: column;
@@ -130,6 +128,22 @@
         .product-info .price {
             color: rgb(225, 247, 81);
         }
+
+        /* CSS riêng cho thẻ Facebook và Shopee */
+        .social-product {
+            height: 200px;
+            /* Chiều cao cố định cho thẻ */
+            align-items: center;
+            /* Căn giữa nội dung theo chiều dọc */
+        }
+
+        .social-product img {
+            width: 200px;
+            /* Kích thước vuông */
+            height: 200px;
+            object-fit: contain;
+            /* Đảm bảo ảnh Shopee không méo */
+        }
     </style>
 </head>
 
@@ -149,7 +163,8 @@
         <div class="social-links">
             <a href="https://www.tiktok.com/@bykiuu?_t=8nekJw7hGDK&_r=1"><img src="img/tiktok.png" alt="TikTok"></a>
             <a href="#"><img src="img/instagram.png" alt="Instagram"></a>
-            <a href="https://www.facebook.com/specialclothesshop"><img src="img/facebook.png" alt="Facebook"></a>
+            <a href="https://www.facebook.com/specialclothesshop?mibextid=LQQJ4d"><img src="img/facebook.png"
+                    alt="Facebook"></a>
         </div>
         <div class="intro">
             <p>Các sản phẩm chúng mình unboxing ở dưới đây ạ ♡</p>
@@ -158,13 +173,13 @@
             <p>Staff hỗ trợ tư vấn về sản phẩm 24/7 ♡</p>
         </div>
         <div class="products">
-            <div class="product" onclick="location.href='https://www.facebook.com/specialclothesshop';">
+            <div class="product social-product" onclick="location.href='https://www.facebook.com/specialclothesshop';">
                 <img src="img/icon-facebook.jpg" alt="Facebook">
                 <div class="product-info">
-                    <h2>Ở đây đang có chương trình Sale mạnh và freeship nha nàng ♡</h2>
+                    <h2>Ở đây ưu đãi giảm sâu nhất nhé các nàng ♡</h2>
                 </div>
             </div>
-            <div class="product" onclick="location.href='https://shopee.vn/bykiuu';">
+            <div class="product social-product" onclick="location.href='https://shopee.vn/bykiuu';">
                 <img src="img/shopee.png" alt="Shopee">
                 <div class="product-info">
                     <h2>Shop của chúng mình đây ạ ♡</h2>
@@ -220,10 +235,13 @@
                 <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lvpkbqqpr1ixad"
                     alt="Váy Maxi Thắt NƠ VAI Vải Voan Mềm Thêu Hoa Hai Lớp">
             </div>
-            <div class="product" onclick="location.href='https://shopee.vn/%C3%81o-babydoll-c%C3%A1nh-ti%C3%AAn-c%E1%BB%95-b%C3%A8o-d%E1%BA%ADp-ly-ng%E1%BB%B1c-tay-%C3%A1o-ph%E1%BB%93ng-phong-c%C3%A1ch-Ulzzang-%C3%81o-s%C6%A1-mi-n%E1%BB%AF-vintage-ph%E1%BB%91i-b%C3%A8o-c%C3%A1ch-%C4%91i%E1%BB%87u-i.1197562665.23889530457?sp_atk=96f8fb1e-d034-4c3f-aeab-843d1ae6d558&xptdk=96f8fb1e-d034-4c3f-aeab-843d1ae6d558';">
-                <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lsl0t1bzuduh54" alt="Áo babydoll cánh tiên cổ bèo dập ly ngực, tay áo phồng phong cách Ulzzang, Áo sơ mi nữ vintage phối bèo cách điệu">
+            <div class="product"
+                onclick="location.href='https://shopee.vn/%C3%81o-babydoll-c%C3%A1nh-ti%C3%AAn-c%E1%BB%95-b%C3%A8o-d%E1%BA%ADp-ly-ng%E1%BB%B1c-tay-%C3%A1o-ph%E1%BB%93ng-phong-c%C3%A1ch-Ulzzang-%C3%81o-s%C6%A1-mi-n%E1%BB%AF-vintage-ph%E1%BB%91i-b%C3%A8o-c%C3%A1ch-%C4%91i%E1%BB%87u-i.1197562665.23889530457?sp_atk=96f8fb1e-d034-4c3f-aeab-843d1ae6d558&xptdk=96f8fb1e-d034-4c3f-aeab-843d1ae6d558';">
+                <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lsl0t1bzuduh54"
+                    alt="Áo babydoll cánh tiên cổ bèo dập ly ngực, tay áo phồng phong cách Ulzzang, Áo sơ mi nữ vintage phối bèo cách điệu">
                 <div class="product-info">
-                    <h2>Áo babydoll cánh tiên cổ bèo dập ly ngực, tay áo phồng phong cách Ulzzang, Áo sơ mi nữ vintage phối bèo cách điệu</h2>
+                    <h2>Áo babydoll cánh tiên cổ bèo dập ly ngực, tay áo phồng phong cách Ulzzang, Áo sơ mi nữ vintage
+                        phối bèo cách điệu</h2>
                 </div>
             </div>
             <div class="product"
@@ -241,22 +259,6 @@
                     alt="Áo Sơ Mi Lưu Diệc Phi Form Rộng Dài Tay Chất Vải Lụa Hàn Không Nhăn">
                 <div class="product-info">
                     <h2>Áo Sơ Mi Lưu Diệc Phi Form Rộng Dài Tay Chất Vải Lụa Hàn Không Nhăn</h2>
-                </div>
-            </div>
-	    <div class="product"
-                onclick="location.href='https://shopee.vn/Set-%C3%A1o-d%C3%A0i-l%E1%BB%A5a-g%E1%BA%A5m-hoa-C%E1%BB%94-TR%C3%92N-PH%E1%BB%90I-CHARM-KHUY-%C3%81O-tay-l%E1%BB%A1-b%E1%BA%A3n-cao-c%E1%BA%A5p-i.1197562665.28018362603';">
-                <div class="product-info">
-                    <h2>Set áo dài lụa gấm hoa CỔ TRÒN PHỐI CHARM KHUY ÁO tay lỡ bản cao cấp</h2>
-                </div>
-                <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m2vul09ha96uf8"
-                    alt="Set áo dài lụa gấm hoa CỔ TRÒN PHỐI CHARM KHUY ÁO tay lỡ bản cao cấp">
-            </div>
-	   <div class="product"
-                onclick="location.href='https://shopee.vn/%C3%81o-d%C3%A0i-c%C3%A1ch-t%C3%A2n-L%C3%94NG-V%C5%A8-Y%E1%BA%BEN-PH%C6%AF%E1%BB%A2NG-th%E1%BA%AFt-n%C6%A1-tay-l%E1%BB%A1-nhi%E1%BB%81u-m%C3%A0u-i.1197562665.25938612280';">
-		<img src="https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m2vu2g74x0hm67"
-                    alt="Áo dài cách tân LÔNG VŨ YẾN PHƯỢNG thắt nơ tay lỡ nhiều màu">
-                <div class="product-info">
-                    <h2>Áo dài cách tân LÔNG VŨ YẾN PHƯỢNG thắt nơ tay lỡ nhiều màu</h2>
                 </div>
             </div>
         </div>

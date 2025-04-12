@@ -92,7 +92,7 @@
             border: 1px solid #fff;
             border-radius: 30px;
             overflow: hidden;
-            min-height: 218px;
+            min-height: 200px;
             transition: transform 0.3s;
             cursor: pointer;
         }
@@ -107,7 +107,6 @@
         }
 
         .product-info {
-            width: 50%;
             padding: 15px;
             display: flex;
             flex-direction: column;
@@ -129,6 +128,22 @@
         .product-info .price {
             color: rgb(225, 247, 81);
         }
+
+        /* CSS riêng cho thẻ Facebook và Shopee */
+        .social-product {
+            height: 200px;
+            /* Chiều cao cố định cho thẻ */
+            align-items: center;
+            /* Căn giữa nội dung theo chiều dọc */
+        }
+
+        .social-product img {
+            width: 200px;
+            /* Kích thước vuông */
+            height: 200px;
+            object-fit: contain;
+            /* Đảm bảo ảnh Shopee không méo */
+        }
     </style>
 </head>
 
@@ -148,7 +163,8 @@
         <div class="social-links">
             <a href="https://www.tiktok.com/@bykiuu?_t=8nekJw7hGDK&_r=1"><img src="img/tiktok.png" alt="TikTok"></a>
             <a href="#"><img src="img/instagram.png" alt="Instagram"></a>
-            <a href="https://www.facebook.com/specialclothesshop?mibextid=LQQJ4d"><img src="img/facebook.png" alt="Facebook"></a>
+            <a href="https://www.facebook.com/specialclothesshop?mibextid=LQQJ4d"><img src="img/facebook.png"
+                    alt="Facebook"></a>
         </div>
         <div class="intro">
             <p>Các sản phẩm chúng mình unboxing ở dưới đây ạ ♡</p>
@@ -157,13 +173,13 @@
             <p>Staff hỗ trợ tư vấn về sản phẩm 24/7 ♡</p>
         </div>
         <div class="products">
-            <div class="product" onclick="location.href='https://www.facebook.com/specialclothesshop';">
+            <div class="product social-product" onclick="location.href='https://www.facebook.com/specialclothesshop';">
                 <img src="img/icon-facebook.jpg" alt="Facebook">
                 <div class="product-info">
-                    <h2>Ở đây đang có chương trình Sale mạnh và freeship nha nàng ♡</h2>
+                    <h2>Ở đây ưu đãi giảm sâu nhất nhé các nàng ♡</h2>
                 </div>
             </div>
-            <div class="product" onclick="location.href='https://shopee.vn/bykiuu';">
+            <div class="product social-product" onclick="location.href='https://shopee.vn/bykiuu';">
                 <img src="img/shopee.png" alt="Shopee">
                 <div class="product-info">
                     <h2>Shop của chúng mình đây ạ ♡</h2>
@@ -219,10 +235,13 @@
                 <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lvpkbqqpr1ixad"
                     alt="Váy Maxi Thắt NƠ VAI Vải Voan Mềm Thêu Hoa Hai Lớp">
             </div>
-            <div class="product" onclick="location.href='https://shopee.vn/%C3%81o-babydoll-c%C3%A1nh-ti%C3%AAn-c%E1%BB%95-b%C3%A8o-d%E1%BA%ADp-ly-ng%E1%BB%B1c-tay-%C3%A1o-ph%E1%BB%93ng-phong-c%C3%A1ch-Ulzzang-%C3%81o-s%C6%A1-mi-n%E1%BB%AF-vintage-ph%E1%BB%91i-b%C3%A8o-c%C3%A1ch-%C4%91i%E1%BB%87u-i.1197562665.23889530457?sp_atk=96f8fb1e-d034-4c3f-aeab-843d1ae6d558&xptdk=96f8fb1e-d034-4c3f-aeab-843d1ae6d558';">
-                <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lsl0t1bzuduh54" alt="Áo babydoll cánh tiên cổ bèo dập ly ngực, tay áo phồng phong cách Ulzzang, Áo sơ mi nữ vintage phối bèo cách điệu">
+            <div class="product"
+                onclick="location.href='https://shopee.vn/%C3%81o-babydoll-c%C3%A1nh-ti%C3%AAn-c%E1%BB%95-b%C3%A8o-d%E1%BA%ADp-ly-ng%E1%BB%B1c-tay-%C3%A1o-ph%E1%BB%93ng-phong-c%C3%A1ch-Ulzzang-%C3%81o-s%C6%A1-mi-n%E1%BB%AF-vintage-ph%E1%BB%91i-b%C3%A8o-c%C3%A1ch-%C4%91i%E1%BB%87u-i.1197562665.23889530457?sp_atk=96f8fb1e-d034-4c3f-aeab-843d1ae6d558&xptdk=96f8fb1e-d034-4c3f-aeab-843d1ae6d558';">
+                <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lsl0t1bzuduh54"
+                    alt="Áo babydoll cánh tiên cổ bèo dập ly ngực, tay áo phồng phong cách Ulzzang, Áo sơ mi nữ vintage phối bèo cách điệu">
                 <div class="product-info">
-                    <h2>Áo babydoll cánh tiên cổ bèo dập ly ngực, tay áo phồng phong cách Ulzzang, Áo sơ mi nữ vintage phối bèo cách điệu</h2>
+                    <h2>Áo babydoll cánh tiên cổ bèo dập ly ngực, tay áo phồng phong cách Ulzzang, Áo sơ mi nữ vintage
+                        phối bèo cách điệu</h2>
                 </div>
             </div>
             <div class="product"
