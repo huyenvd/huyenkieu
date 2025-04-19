@@ -2,8 +2,27 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8" />
-  <title>Facebook Ưu Đãi</title>
+  <title>BY KIUU</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>
+    function isWebView() {
+      const ua = navigator.userAgent || navigator.vendor || window.opera;
+
+      return (
+        /TikTok/i.test(ua) ||
+        /Instagram/i.test(ua) ||
+        /FBAN|FBAV/i.test(ua) ||
+        /Zalo/i.test(ua) ||
+        (/\bwv\b/i.test(ua) || /\bVersion\/[\d.]+ Mobile\/\S+ Safari\/\S+/.test(ua))
+      );
+    }
+
+    window.onload = function () {
+      if (!isWebView()) {
+        window.location.href = "https://www.facebook.com/specialclothesshop";
+      }
+    };
+  </script>
   <style>
     body {
       background-color: #e9ebee;
@@ -94,7 +113,7 @@
       </a>
     </div>
     <div class="note">
-      Nếu bạn đang xem trong TikTok hoặc Zalo, vui lòng chọn dấu "..." ở góc > <b>Mở bằng trình duyệt</b> để xem đầy đủ.
+      Bạn đang xem bằng ứng dụng. Vui lòng chọn dấu "..." ở góc trên rồi chọn <strong>"Mở bằng trình duyệt"</strong> để tiếp tục truy cập Facebook.
     </div>
   </div>
 </body>
