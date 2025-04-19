@@ -2,16 +2,21 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    
+    <title>Mở Facebook</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Share app</title>
     <script>
         window.onload = function () {
-            window.location.href = "https://www.facebook.com/specialclothesshop";
+            // Thử mở app Facebook
+            window.location = "fb://facewebmodal/f?href=https://www.facebook.com/specialclothesshop";
+
+            // Nếu không mở được sau 2 giây thì chuyển hướng sang trang hỗ trợ nội bộ
+            setTimeout(function () {
+                window.location = "by-kiuu-facebook-support.html";
+            }, 2000);
         };
     </script>
 </head>
 <body>
-    <h1>Bạn vui lòng chờ trong giây lát...</h1>
+    <p>Đang mở Facebook, vui lòng chờ trong giây lát...</p>
 </body>
 </html>
