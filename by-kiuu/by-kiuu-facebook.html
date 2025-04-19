@@ -5,24 +5,32 @@
   <title>BY KIUU</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script>
-    function isWebView() {
+    function isLikelyWebView() {
       const ua = navigator.userAgent || navigator.vendor || window.opera;
-
-      return (
-        /TikTok/i.test(ua) ||
-        /Instagram/i.test(ua) ||
-        /FBAN|FBAV/i.test(ua) ||
-        /Zalo/i.test(ua) ||
-        (/\bwv\b/i.test(ua) || /\bVersion\/[\d.]+ Mobile\/\S+ Safari\/\S+/.test(ua))
-      );
+  
+      // In ra để test
+      console.log("User-Agent:", ua);
+  
+      // Một số app có thể fake UA nên check thêm các pattern tinh vi hơn
+      const lowerUA = ua.toLowerCase();
+  
+      const isWebViewLike = /tiktok|instagram|zalo|fbav|fban/.test(lowerUA);
+      const isRealBrowser = /chrome|safari|firefox|edge/.test(lowerUA) && !isWebViewLike;
+  
+      return !isRealBrowser; // Nếu không chắc là browser → coi như WebView
     }
-
+  
     window.onload = function () {
-      if (!isWebView()) {
-        window.location.href = "https://www.facebook.com/specialclothesshop";
-      }
+      setTimeout(() => {
+        if (!isLikelyWebView()) {
+          window.location.href = "https://www.facebook.com/specialclothesshop";
+        } else {
+          console.log("Giữ nguyên: đang trong WebView");
+        }
+      }, 400); // chờ 400ms để chắc chắn UA đã load
     };
   </script>
+  
   <style>
     body {
       background-color: #e9ebee;
