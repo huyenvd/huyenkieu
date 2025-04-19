@@ -1,22 +1,101 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <title>Mở Facebook</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script>
-        window.onload = function () {
-            // Thử mở app Facebook
-            window.location = "fb://facewebmodal/f?href=https://www.facebook.com/specialclothesshop";
-
-            // Nếu không mở được sau 2 giây thì chuyển hướng sang trang hỗ trợ nội bộ
-            setTimeout(function () {
-                window.location = "by-kiuu-facebook-support.html";
-            }, 2000);
-        };
-    </script>
+  <meta charset="UTF-8" />
+  <title>Facebook Ưu Đãi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      background-color: #e9ebee;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 500px;
+      margin: 40px auto;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      padding: 15px;
+    }
+    .avatar {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+    .name-time {
+      display: flex;
+      flex-direction: column;
+    }
+    .name {
+      font-weight: bold;
+      font-size: 16px;
+    }
+    .time {
+      font-size: 12px;
+      color: #777;
+    }
+    .post-text {
+      padding: 0 15px 15px 15px;
+      font-size: 15px;
+      color: #333;
+    }
+    .post-image {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+    }
+    .button-container {
+      padding: 20px;
+      text-align: center;
+    }
+    .fb-button {
+      background-color: #1877f2;
+      color: white;
+      padding: 12px 24px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .note {
+      font-size: 13px;
+      color: #666;
+      text-align: center;
+      padding: 10px 20px 20px 20px;
+    }
+  </style>
 </head>
 <body>
-    <p>Đang mở Facebook, vui lòng chờ trong giây lát...</p>
+  <div class="container">
+    <div class="header">
+      <img src="img/icon-facebook.jpg" alt="Avatar" class="avatar" />
+      <div class="name-time">
+        <div class="name">Special Clothes Shop</div>
+        <div class="time">5 phút trước · 📱</div>
+      </div>
+    </div>
+    <div class="post-text">
+      Ở đây ưu đãi giảm sâu nhất nhé các nàng ♡ Click vào để xem chi tiết chương trình khuyến mãi trong tháng này!
+    </div>
+    <img src="img/sale-banner.jpg" alt="Sale" class="post-image" />
+    <div class="button-container">
+      <a href="https://www.facebook.com/specialclothesshop" class="fb-button" target="_blank">
+        Mở trong ứng dụng Facebook
+      </a>
+    </div>
+    <div class="note">
+      Nếu bạn đang xem trong TikTok hoặc Zalo, vui lòng chọn dấu "..." ở góc > <b>Mở bằng trình duyệt</b> để xem đầy đủ.
+    </div>
+  </div>
 </body>
 </html>
